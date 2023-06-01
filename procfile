@@ -1,0 +1,4 @@
+web: vendor/bin/heroku-php-apache2
+```
+
+This will use the `heroku-php-apache2` script provided by the buildpack to start your application.
