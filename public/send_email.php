@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Validate form values
     if (empty($name) || empty($email) || empty($message)) {
         // Required fields are missing, show an error message and redirect
-        header('Location: contact.html?error=1');
+        header('Location: contact.php?error=1');
         exit;
     }
 
@@ -23,14 +23,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Send the email
     if (mail($recipient, $subject, $email_content, $email_headers)) {
         // Email sent successfully, redirect to a success page or the same page with a success message
-        header('Location: contact.html?success=1');
+        header('Location: contact.php?success=1');
     } else {
         // Email sending failed, show an error message and redirect
-        header('Location: contact.html?error=2');
+        header('Location: contact.php?error=2');
     }
 } else {
     // Invalid request, redirect to the contact form
-    header('Location: contact.html');
+    header('Location: contact.php');
 }
 ?>
 ```

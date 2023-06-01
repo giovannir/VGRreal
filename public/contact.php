@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <style>
-      /* Additional styles for contact.html */
+      /* Additional styles for contact.php */
       input[type="text"], input[type="email"], textarea {
         display: block;
         width: 100%;
@@ -63,7 +63,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="contact.php">Contact Us</a></li>
         </ul>
       </nav>
     </header>
