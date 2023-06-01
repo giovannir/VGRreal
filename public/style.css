@@ -20,6 +20,11 @@ header {
   padding: 1rem 0;
 }
 
+.logo img {
+  max-width: 150px; /* Change this value to adjust the logo size */
+  height: auto;
+}
+
 .logo h1 {
   display: inline;
   margin-left: 0.5rem;
