@@ -14,11 +14,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Send the email
     if (mail($to, $subject, $message, $headers)) {
         // Redirect back to the contact page with a success parameter
-        header("Location: contact.php?success=1");
+        header("Location: contact.html?success=1");
         exit();
     } else {
         // Redirect back to the contact page with an error parameter
-        header("Location: contact.php?error=1");
+        header("Location: contact.html?error=1");
         exit();
     }
 }
