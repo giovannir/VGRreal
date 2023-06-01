@@ -21,7 +21,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #333;
+  background-color: #333; /* Change the background color here */
 }
 
 .logo {
@@ -36,187 +36,108 @@ header {
 }
 
 .logo h1 {
-  color: #fff;
+  color: #fff; /* Change the text color here */
   font-size: 1.5rem;
   margin: 0;
 }
 
-/* Home Section */
-#home {
-  text-align: center;
-  padding: 2rem 0;
-}
-
-#home h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-/* About Section */
-#about {
-  padding: 2rem 0;
-  text-align: center;
-}
-
-#about h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-/* Services Section */
-#services {
-  padding: 2rem 0;
-  text-align: center;
-}
-
-#services h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.service-cards {
+nav ul {
+  list-style: none;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   gap: 1rem;
 }
 
-.card {
-  box-sizing: border-box;
-  padding: 1rem;
-  width: 20%;
-  min-width: 200px;
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  text-align: center;
+nav li {
+  padding: 0.5rem;
 }
 
-.card img {
+nav a {
+  color: #fff; /* Change the text color here */
+  font-size: 1.1rem;
+}
+
+nav a:hover {
+  color: #ccc;
+}
+
+/* Main content */
+main {
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+.banner img {
   width: 100%;
   height: auto;
-  margin-bottom: 1rem;
 }
 
-.card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-/* Testimonials Section */
-#testimonials {
-  padding: 2rem 0;
-  text-align: center;
-}
-
-#testimonials h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.testimonial-slides {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-  justify-content: center;
-}
-
-blockquote {
-  max-width: 40%;
-  font-style: italic;
-  margin: 0;
-  padding: 1rem;
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-blockquote p {
-  margin-bottom: 1rem;
-}
-
-/* CTA Section */
-#cta {
-  padding: 2rem 0;
-  text-align: center;
-  background-color: #333;
-  color: #fff;
-}
-
-#cta h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-#cta p {
-  margin-bottom: 1rem;
-}
-
-/* Footer */
-footer {
-  padding: 1rem 0;
-  background-color: #222;
-  color: #fff;
-  text-align: center;
-}
-
-.footer-links ul {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 1rem;
-}
-
-.footer-links li {
-  display: inline;
-  margin: 0 0.5rem;
-}
-
-.footer-links a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.social-media {
-  margin-bottom: 1rem;
-}
-
-.social-media img {
-  width: 30px;
-  height: 30px;
-  margin: 0 0.5rem;
-}
-
-/* Buttons */
 .cta-button {
   display: inline-block;
-  padding: 0.75rem 1.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #333;
   background-color: #333;
   color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
+  font-size: 1.1rem;
+  margin-top: 1rem;
 }
 
 .cta-button:hover {
   background-color: #555;
+  border-color: #555;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-content h3 {
+  margin-bottom: 0.5rem;
+}
+
+.social-media ul,
+.contact-info p {
+  margin-bottom: 1rem;
+}
+
+.social-media a,
+.contact-info a {
+  color: #fff;
+}
+
+.social-media a:hover,
+.contact-info a:hover {
+  color: #ccc;
+}
+
+.copyright {
+  text-align: center;
+  width: 100%;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  .service-cards {
-    flex-direction: column;
+  header {
+    flex-wrap: wrap;
   }
 
-  .card {
-    width: 80%;
-    margin-bottom: 1rem;
+  nav {
+    margin-top: 1rem;
   }
-
-  .testimonial-slides {
-    flex-direction: column;
-  }
-
-  blockquote {
-    max-width: 80%;
-    margin-bottom: 1rem;
+  
+  .footer-content {
+    gap: 1rem;
   }
 }
