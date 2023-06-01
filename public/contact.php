@@ -50,7 +50,15 @@
       padding: 10px;
       margin-bottom: 20px;
       border-radius: 5px; }
+      .error-message {
+  background-color: #f8d7da;
+  border: 1px solid #f5c2c7;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
     </style>
+    
   </head>
   <body>
     <header>
