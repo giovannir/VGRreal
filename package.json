@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "name": "my-static-website",
     "version": "1.0.0",
@@ -12,4 +13,20 @@
     "dependencies": {
       "express": "^4.17.1"
     }
+=======
+{
+    "name": "my-static-website",
+    "version": "1.0.0",
+    "description": "A simple static website",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "engines": {
+      "node": "14.x",
+      "npm": "6.x"
+    },
+    "dependencies": {
+      "express": "^4.17.1"
+    }
+>>>>>>> origin/main
   }
